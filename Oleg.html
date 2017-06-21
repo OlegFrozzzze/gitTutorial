@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta charset="UTF-8"/>
+	<title> Страница № 1 </title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+	<link href="OlegStyle.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript">
+	function digitalWatch() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if (hours < 10) hours = "0" + hours;
+    if (minutes < 10) minutes = "0" + minutes;
+    if (seconds < 10) seconds = "0" + seconds;
+    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
+	setTimeout("digitalWatch()", 1000);}
+	</script>
+	
+	</head>
+	
+	
+	
+	<body onload="digitalWatch()">
+	<div class="head"> </div>
+	
+	<header><nav class="dws-menu">
+	<ul class="dws-ul">
+	<li><a href="#" class="dws-li">Главная</a></li>
+	<li><a href="#" class="dws-li">Материалы</a>
+		<ul>
+			<li><a href="http://htmlbook.ru/html" target="_blank">HTML</a></li>
+			<li><a href="#">PHP</a></li>
+			<li><a href="http://htmlbook.ru/css" target="_blank">CSS</a></li>
+			<li><a href="http://javascript.ru/manual" target="_blank">JS</a></li>
+			<li><a href="#">Каналы на YouTube</a>
+			<ul>
+				<li><a href="https://www.youtube.com/user/dj47maryn">Канал Мармука</a></li>
+				<li><a href="https://www.youtube.com/channel/UC7enHM_oJRYJOnyJrcRzwbg">Канал Web Developer Blog</a></li>
+				<li><a href="https://www.youtube.com/channel/UC7f5bVxWsm3jlZIPDzOMcAg">Канал Хауди Хо</a></li>
+			</ul></li>
+		</ul>
+	</li>
+	<li><a href="#" class="dws-li">Новости</a></li>
+	<li><a href="#" class="dws-li">Регистрация</a></li>
+	<li><a href="#" class="dws-li">Контакты</a></li>
+	</ul>
+	</nav></header>
+	
+	<div class="content"> 
+	<div class="menu_left"><p id="digital_watch" style="color: #f00; font-size: 120%; font-weight: bold;"></p></div>
+	<div class="menu_right">
+	<p>Первый трек</p>
+	<audio controls src = "audio/12345.mp3"></audio></div>
+	<div class= "content_center"> 
+	<div class="carousel">
+		<div>
+				<iframe name="slider1"></iframe>
+		</div>
+			<span class="video_smena">
+				<a href="124/PHP/PHP Уровень 1. Урок 1.1 Основы PHP.mp4" target="slider1"><span class="descr">Урок 1</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 1.2 Основы PHP.mp4" target="slider1"><span class="descr">Урок 1.2</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 2.1 Условия и функции.mp4" target="slider1"><span class="descr">Урок 2</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 2.2 Условия и функции.mp4" target="slider1"><span class="descr">Урок 2.2</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 3. Циклы и массивы.mp4" target="slider1"><span class="descr">Урок 3</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 4. Запросы HTTP, параметры URL и формы HTML.mp4" target="slider1"><span class="descr">Урок 4</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 5. Cookies и сессии.mp4" target="slider1"><span class="descr">Урок 5</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 6. Работа с файлами.mp4" target="slider1"><span class="descr">Урок 6</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 7. Работа с базой данных.mp4" target="slider1"><span class="descr">Урок 7</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 1. Урок 8. Концепция MVC.mp4" target="slider1"><span class="descr">Урок 8</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 2. дополнительный материал к 4 уроку.mp4" target="slider1"><span class="descr">Урок 9</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 2. Урок 1. Системы контроля версий.mp4" target="slider1"><span class="descr">Урок 10</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 2. Урок 2. Объектно-ориентированное программирование.mp4" target="slider1"><span class="descr">Урок 11</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 2. Урок 3. Архитектурный шаблон MVC.mp4" target="slider1"><span class="descr">Урок 12</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 2. Урок 4. Построение View. Шаблонизация. Буферизация.mp4" target="slider1"><span class="descr">Урок 13</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 2. Урок 5. Построение моделей. PDO.mp4" target="slider1"><span class="descr">Урок 14</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP уровень 2. Урок 6. Построение моделей. PDO. (Продолжение).mp4" target="slider1"><span class="descr">Урок 15</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 2. Урок 7. Полезные заметки об архитектуре. Использование внешних библиотек.mp4" target="slider1"><span class="descr">Урок 16</span><img src="img/php3.jpg" alt="Alt"></a>
+				<a href="124/PHP/PHP Уровень 2. Урок 8. Мини-Фреймворк для создания сайтов.mp4" target="slider1"><span class="descr">Урок 17</span><img src="img/php3.jpg" alt="Alt"></a>
+			</span>
+		</div>
+	Текст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текст
+	Текст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст
+	Текст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текст
+	Текст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текст
+	Текст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текстТекст текст
+		</div>
+	</div>
+	
+	<div class="over">
+	делает эту хрень Олег ) 
+
+	</div>
+	</body>
+</html>
